@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Ninja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header da lista -->
+        <header class="header">
+            <h1>📝 Minhas Tarefas</h1>
+            <p class="subtitle">Organize seu dia como um ninja!</p>
+        </header>
+
+        <!-- Formulário para adicionar -->
+        <section class="add-task">
+            <input 
+                type="text" 
+                id="novaTarefa" 
+                placeholder="O que precisa fazer hoje?"
+                autocomplete="off"
+            >
+            <button id="adicionarBtn" class="btn-add">
+                <span>+</span> Adicionar
+            </button>
+        </section>
+
+        <!-- Contador de tarefas -->
+        <div class="task-counter">
+            <span id="totalTarefas">0</span> tarefas • 
+            <span id="tarefasFeitas">0</span> completadas
+        </div>
+
+        <!-- Lista de tarefas -->
+        <section class="tasks-container">
+            <div id="listaTarefas" class="task-list">
+                <!-- As tarefas vão aparecer aqui via JavaScript -->
+            </div>
+            
+            <!-- Mensagem quando não tem tarefas -->
+            <div id="mensagemVazia" class="empty-message">
+                <div class="emoji">🎯</div>
+                <p>Nenhuma tarefa ainda!</p>
+                <small>Adicione uma tarefa acima para começar</small>
+            </div>
+        </section>
+
+        <!-- Botão limpar completadas -->
+        <button id="limparCompletadas" class="btn-clear" style="display: none;">
+            🧹 Limpar tarefas completadas
+        </button>
+    </div>
+
+    <!-- Script no final (carrega depois do HTML) -->
+    <script src="script.js"></script>
+</body>
+</html>
