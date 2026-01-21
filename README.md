@@ -43,3 +43,9 @@ const tarefa = {
 - Remover tarefas específicas
 - Salvar no localStorage do navegador
 - Renderizar dinamicamente na tela
+
+## 📊 Status do Projeto
+
+![GitHub repo size](https://img.shields.io/github/repo-size/FelipeFullStaker/todo-list-ninja)
+![GitHub language count](https://img.shields.io/github/languages/count/FelipeFullStaker/todo-list-ninja)
+![GitHub top language](https://img.shields.io/github/languages/top/FelipeFullStaker/todo-list-ninja)
